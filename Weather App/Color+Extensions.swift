@@ -16,4 +16,5 @@ extension UIColor {
 
 extension UIImage {
     static let sunerIcon = UIImage(named: "sunIcon")
+    static let cloudyIcon = UIImage(named: "cloudIcon")
 }

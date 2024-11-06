@@ -79,18 +79,11 @@ class HourlyForecastCollectionViewCell: UICollectionViewCell {
     }
     
     private func setConstraints(){
-        
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
-        ])
+        stackView.setContraintsToParent(contentView)
         
         NSLayoutConstraint.activate([
             iconImageView.heightAnchor.constraint(equalToConstant: 33)
         ])
         
     }
-    
 }
